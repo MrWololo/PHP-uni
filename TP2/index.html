@@ -1,0 +1,96 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Contact Form</h1>
+			<ol class="rounded-list">
+				<li>
+					<p>Your basic info</p>
+
+					<form action="">
+						<p>Name</p>
+						<input type="text" name="name" id="name" />
+
+						<p>Email</p>
+						<input type="email" name="email" id="email" />
+
+						<p>Pasword</p>
+						<input type="password" name="password" id="password" />
+
+						<p>Birthday</p>
+						<input type="date" name="birthday" id="birthday" />
+
+						<div>
+							<br />
+							<p class="aligner">Sex:</p>
+
+							<input
+								style="width: auto; height: auto;"
+								type="radio"
+								name="gender"
+								id="maleRadio"
+								value="male"
+							/>
+							<label for="maleRadio" style="color: black;">Male</label>
+
+							<input
+								style="width: auto; height: auto;"
+								type="radio"
+								name="gender"
+								id="femaleRadio"
+								value="female"
+							/>
+							<label for="femaleRadio">Female</label>
+						</div>
+					</form>
+				</li>
+				<li>
+					<p>Your profile</p>
+
+					<form style="width: 90%;" action="">
+						<p>About you</p>
+						<textarea name="" id="" rows="3"></textarea>
+
+						<p>Role</p>
+						<select name="" id="">
+							<option value="FrontEnd">Front End Developer </option>
+							<option value="BackEnd">Back End Developer</option>
+						</select>
+
+						<p>Interests</p>
+
+						<div style="width: 85%;">
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Data Base</label>
+
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Design</label>
+
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Business</label>
+
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Unit Test</label>
+
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Cloud Development</label>
+
+							<input class="sizer" type="checkbox" name="c" id="" />
+							<label for="">Web Development</label>
+						</div>
+					</form>
+
+					<div style="display: inline;">
+						<input style="width: max;" type="button" value="Send" />
+						<input style="width: max;" type="button" value="Reset" />
+					</div>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+.wrapper {
+	text-align: center;
+	border-width: 1px;
+	border-radius: 10px;
+	border-style: solid;
+	max-width: 500px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.041);
+	font-family: 'Nunito', sans-serif;
+}
+
+.aligner {
+	display: inline;
+}
+
+.sizer {
+	margin-top: 5;
+	width: auto;
+	height: auto;
+}
+
+ol {
+	counter-reset: li;
+	padding: 0;
+}
+
+.rounded-list li {
+	text-align: left;
+	position: relative;
+	left: 80;
+	color: white;
+}
+
+.rounded-list li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -50;
+	margin-top: -3;
+	background: #51e67e;
+	width: 30;
+	line-height: 2;
+	text-align: center;
+	border-radius: 50px;
+}
+
+li p {
+	font-weight: bold;
+	font-size: 24;
+	color: black;
+	margin-bottom: 10;
+}
+
+form p {
+	margin-bottom: 0;
+	/* font-weight: 550; */
+	font-size: larger;
+	color: rgb(97, 97, 97);
+}
+
+input {
+	height: 30px;
+	width: 80%;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.055);
+	margin-top: 5;
+}
+
+form {
+	margin-left: -50;
+}
+
+label {
+	color: black;
+}
+
+textarea {
+	margin-top: 5px;
+	width: 98%;
+	background-color: rgba(0, 0, 0, 0.055);
+	border: 0;
+}
+
+select {
+	border: 0;
+	margin-top: 5px;
+	width: 98%;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.055);
+}
