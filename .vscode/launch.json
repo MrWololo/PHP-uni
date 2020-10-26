@@ -1,14 +1,33 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "pwa-chrome",
-      "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}",
-      "preLaunchTask": "Start",
-      "postDebugTask": "Stop"
-    }
-  ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "firefox",
+			"request": "launch",
+			"reAttach": true,
+			"url": "http://localhost:8080",
+			"name": "Launch index.html",
+			"file": "${workspaceFolder}/index.html",
+			"webRoot": "${workspaceFolder}",
+			"preLaunchTask": "Start",
+			"postDebugTask": "Stop"
+		},
+		{
+			"type": "firefox",
+			"request": "attach",
+			"url": "http://localhost:8080",
+			"name": "Attach",
+			"preLaunchTask": "Start",
+			"postDebugTask": "Stop"
+		},
+		{
+			"type": "pwa-chrome",
+			"request": "launch",
+			"name": "Launch Chrome against localhost",
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}",
+			"preLaunchTask": "Start",
+			"postDebugTask": "Stop"
+		}
+	]
 }
